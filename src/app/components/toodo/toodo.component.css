@@ -1,0 +1,4 @@
+
+.toodolist-wrapper{
+    @apply bg-background-200 p-8 w-fit mt-8 mx-auto rounded-lg
+}
