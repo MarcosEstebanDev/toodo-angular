@@ -2,3 +2,45 @@
 .toodolist-wrapper{
     @apply bg-background-200 p-8 w-fit mt-8 mx-auto rounded-lg
 }
+.title{
+    @apply text-3xl font-bold text-center mb-4
+}
+.new-toodo{
+    @apply relative flex items-center rounded-lg overflow-hidden
+}
+.new-toodo input{
+    @apply w-64 p-2 rounded-lg bg-background-300
+}
+.new-toodo button{
+    @apply absolute right-0 bg-background-400 text-lg font-black h-full p-2;
+}
+.filters {
+    @apply flex justify-end gap-2 my-2;
+}
+.filters button{
+    @apply px-2 rounded-lg bg-background-300;
+}
+.filters button.active{
+    @apply bg-background-400
+}
+.toodolist {
+    @apply flex flex-col gap-2;
+}
+.toodolist li{
+    @apply flex bg-background-300 px-4 py-2 rounded-lg items-center gap-2
+}
+.toodolist li.toodo label{
+    @apply flex-1 
+}
+.toodolist li.toodo:hover button{
+    @apply block
+}
+.toodolist li.toodo button{
+    @apply hidden text-xs
+}
+.toodolist li.toodo input[type="checkbox"]{
+    @apply w-4 h-4 cursor-pointer
+}
+.toodolist li.toodo-editing input[type="text"]{
+    @apply w-full bg-background-400 rounded-lg px-2 outline-none
+}
